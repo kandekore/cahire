@@ -1,0 +1,21 @@
+{{#if bookings.length}}
+  <div class="col-md-6 booking-list">
+    <h3>Current Bookings:</h3>
+
+    {{#each bookings as |booking|}}
+      <div class="row mb-2">
+        <div class="col-md-8">
+          <h4><a href="/booking/{{booking.id}}">{{booking.car}}</a></h4>
+          <p><strong>Pick Up:</strong> {{pickup}}</p>
+          <p><strong>Drop Off</strong> {{dropoff}}</p>
+        </div>
+        <div class="col-md-4">
+          <button
+            class="btn btn-sm btn-danger"
+            data-id="{{booking.id}}"
+          >DELETE</button>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+{{/if}}

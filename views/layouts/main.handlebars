@@ -1,0 +1,206 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCA Rental</title>
+     <link rel="stylesheet" href="css/styles.css" />
+     <style>.header {
+  background: green !important;
+}
+a.navbar-brand {
+  color: #fff !important;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  justify-content: space-evenly;
+  /* width: 145%;*/
+  padding: 40px;
+}
+
+li {
+  list-style: none;
+}
+.h3,
+h3 {
+  font-size: 1.5rem;
+}
+
+.carousel-item.active {
+  height: 450px;
+  margin-top: -20px;
+}
+h5.banner {
+  text-shadow: 3px 3px #008000;
+  font-size: 60px;
+  padding-bottom: 25px;
+  color: white;
+}
+p.slogan {
+  font-size: 35px;
+  text-shadow: 2px 2px green;
+}
+.card {
+  margin-top: 20px;
+}
+
+.card-img-top {
+  height: 175px;
+}
+button.btn.btn-primary.car {
+  float: right;
+  background: green;
+}
+
+a.btn.btn-primary.car {
+  float: right;
+  background: green;
+}
+
+.oner {
+  width: 100%;
+}
+
+input.hidden {
+    display: none;
+}
+</style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+      $( function() { $( "#datepicker" ).datepicker(); } ); $( function() { $(
+      "#datepicker1" ).datepicker(); } );
+    </script>
+
+  </head>
+
+  <body>
+    <nav class="navbar header fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">SCA Car Rental</a>
+        {{#if logged_in}}
+          <button id="logout">Logout</button>
+        {{else}}
+          <button><a href="/login">Login</a></button>
+        {{/if}}
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SCA Car Rental</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/profile">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/car">Cars</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Locations
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a
+                      class="dropdown-item"
+                      href="/location/1"
+                    >Birmingham</a></li>
+                  <li><a
+                      class="dropdown-item"
+                      href="/location/3"
+                    >London</a></li>
+                  <li><a class="dropdown-item" href="/location/2">LA</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="/location">All</a></li>
+                </ul>
+              </li>
+
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success"
+                type="submit"
+              >Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="display-flex justify-space-between align-center p-2">
+      <h1>
+
+      </h1>
+    </header>
+    <main class="container container-fluid mt-5"><div class="flex-container">
+        {{{body}}}
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="/js/index.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    {{#if logged_in}}
+      <script src="/js/logout.js"></script>
+    {{/if}}
+
+  </body>
+
+</html>

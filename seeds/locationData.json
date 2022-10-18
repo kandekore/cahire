@@ -1,0 +1,18 @@
+[
+  {
+    "country": "United Kingdom",
+    "city": "Birmingham",
+    "image": "images/birmingham.webp"
+  },
+  {
+    "country": "United States",
+    "city": "Los Angeles",
+    "image": "images/losangeles.webp"
+  },
+  {
+    "country": "United Kingdom",
+    "city": "London",
+    "image": "images/london.jpeg"
+  }
+]
+

@@ -1,0 +1,136 @@
+[
+  {
+    "FuelType": "ELECTRIC",
+    "Transmission": "AUTOMATIC",
+    "BodyStyle": "HATCHBACK",
+    "Marque": "CITROEN",
+    "Range": "C4",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2",
+    "Location": "London",
+    "image": "/images/v4.webp"
+  },
+
+  {
+    "FuelType": "ELECTRIC",
+    "Transmission": "AUTOMATIC",
+    "BodyStyle": "HATCHBACK",
+    "Marque": "NISSAN",
+    "Range": "LEAF",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2",
+    "Location": "London",
+    "image": "/images/leaf.jpg"
+  },
+
+  {
+    "FuelType": "ELECTRIC/PETROL",
+    "Transmission": "AUTOMATIC",
+    "BodyStyle": "SALOON",
+    "Marque": "MERCEDES",
+    "Range": "C-CLASS",
+    "NumberOfDoors": 4,
+    "DriveType": "4X2",
+    "Location": "London",
+    "image": "/images/cclass.png"
+  },
+  {
+    "FuelType": "PETROL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "SUV Coupe",
+    "Marque": "NISSAN",
+    "Range": "JUKE",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2",
+    "Location": "Birmingham",
+    "image": "/images/juke.jfif"
+  },
+  {
+    "FuelType": "PETROL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "SUV Hatchback",
+    "Marque": "KIA",
+    "Range": "STONIC",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2",
+    "Location": "Birmingham",
+    "image": "/images/stonic.webp"
+  },
+  {
+    "FuelType": "PETROL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "ESTATE",
+    "Marque": "KIA",
+    "Range": "SPORTAGE",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2",
+    "Location": "Birmingham",
+    "image": "/images/sportage.jpg"
+  },
+  {
+    "FuelType": "PETROL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "HATCHBACK",
+    "Marque": "PEUGEOT",
+    "Range": "208",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2",
+    "Location": "Birmingham",
+    "image": "/images/p208.png"
+  },
+  {
+    "FuelType": "PETROL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "HATCHBACK",
+    "Marque": "FIAT",
+    "Range": "Tipo",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2",
+    "Location": "Los Angeles",
+    "image": "/images/tipo.jpg"
+  },
+  {
+    "FuelType": "PETROL",
+    "Transmission": "SEMI AUTO",
+    "BodyStyle": "SUV Hatchback",
+    "Marque": "FIAT",
+    "Range": "500X",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2",
+    "Location": "Los Angeles",
+    "image": "/images/500.png"
+  },
+  {
+    "FuelType": "DIESEL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "SUV Hatchback",
+    "Marque": "JAGUAR",
+    "Range": "E-PACE",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2",
+    "Location": "Los Angeles",
+    "image": "/images/epace.webp"
+  },
+  {
+    "FuelType": "PETROL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "HATCHBACK",
+    "Marque": "SEAT",
+    "Range": "IBIZA",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2",
+    "Location": "Los Angeles",
+    "image": "/images/ibiza.webp"
+  },
+  {
+    "FuelType": "PETROL",
+    "Transmission": "MANUAL",
+    "BodyStyle": "SUV Estate",
+    "Marque": "FORD",
+    "Range": "ECOSPORT",
+    "NumberOfDoors": 5,
+    "DriveType": "4X2",
+    "Location": "London",
+    "image": "/images/eco.jpg"
+  }
+]

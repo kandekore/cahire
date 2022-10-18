@@ -1,0 +1,16 @@
+<div class="oner"><h1>All Cars</h1></div>
+
+{{#each cars}}
+
+  <div class="card" style="width: 18rem;">
+    <img src="{{image}}" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h3>{{Marque}} {{Range}}</h3>
+      <h4>{{Location}}</h4>
+
+      <a href="/car/{{id}}" type="button" class="btn btn-primary car">More
+        Details</a>
+    </div>
+  </div>
+
+{{/each}}

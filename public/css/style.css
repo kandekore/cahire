@@ -1,0 +1,59 @@
+.header {
+  background: green !important;
+}
+a.navbar-brand {
+  color: #fff !important;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  justify-content: space-evenly;
+  /* width: 145%;*/
+  padding: 40px;
+}
+
+li {
+  list-style: none;
+}
+.h3,
+h3 {
+  font-size: 1.5rem;
+}
+
+.carousel-item.active {
+  height: 450px;
+  margin-top: -20px;
+}
+h5.banner {
+  text-shadow: 3px 3px #008000;
+  font-size: 60px;
+  padding-bottom: 25px;
+  color: white;
+}
+p.slogan {
+  font-size: 35px;
+  text-shadow: 2px 2px green;
+}
+.card {
+  margin-top: 20px;
+}
+
+.card-img-top {
+  height: 175px;
+}
+button.btn.btn-primary.car {
+  float: right;
+  background: green;
+}
+
+a.btn.btn-primary.car {
+  float: right;
+  background: green;
+}
+
+.oner {
+  width: 100%;
+}

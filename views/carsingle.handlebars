@@ -1,0 +1,121 @@
+{{!-- <div class="card mb-3">
+  <img
+    src="{{image}}"
+    class="card-img-top"
+    alt="{{Marque}} {{Range}}"
+    title="{{Marque}} {{Range}}"
+  />
+  <div class="card-body">
+    <h5 class="card-title">{{Marque}} {{Range}}</h5>
+    <li><p class="card-text"><strong>Fuel Type:</strong> {{FuelType}}</p></li>
+    <li><p class="card-text"><strong>Transmission:</strong>
+        {{Transmission}}</p></li>
+    <li><p class="card-text"><strong>Body Style:</strong>
+        {{BodyStyle}}</p></li>
+    <li><p class="card-text"><strong>Number of Doors:</strong>
+        {{NumberOfDoors}}</p></li>
+    <li><p class="card-text"><strong>Drive Type:</strong>
+        {{DriveType}}</p></li>
+  </div>
+</div> --}}
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{Marque}} {{Range}}</h5>
+    <button
+      type="button"
+      class="btn btn-primary car"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Book this car
+    </button>
+    <li><p class="card-text"><strong>Fuel Type:</strong> {{FuelType}}</p></li>
+    <li><p class="card-text"><strong>Transmission:</strong>
+        {{Transmission}}</p></li>
+    <li><p class="card-text"><strong>Body Style:</strong>
+        {{BodyStyle}}</p></li>
+    <li><p class="card-text"><strong>Number of Doors:</strong>
+        {{NumberOfDoors}}</p></li>
+    <li><p class="card-text"><strong>Drive Type:</strong>
+        {{DriveType}}</p></li>
+
+  </div>
+  <img
+    src="{{image}}"
+    class="card-img-bottom"
+    alt="{{Marque}} {{Range}}"
+    title="{{Marque}} {{Range}}"
+  />
+</div>
+
+{{!-- <div class="card" style="width: 18rem;">
+  <img src="{{image}}" class="card-img-top" alt="..." />
+  <div class="card-body">
+    <h3>{{Marque}} {{Range}}</h3>
+    <li><p class="card-text"><strong>Fuel Type:</strong> {{FuelType}}</p></li>
+    <li><p class="card-text"><strong>Transmission:</strong>
+        {{Transmission}}</p></li>
+    <li><p class="card-text"><strong>Body Style:</strong>
+        {{BodyStyle}}</p></li>
+    <li><p class="card-text"><strong>Number of Doors:</strong>
+        {{NumberOfDoors}}</p></li>
+    <li><p class="card-text"><strong>Drive Type:</strong>
+        {{DriveType}}</p></li>
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Launch demo modal
+    </button>
+  </div>
+</div> --}}
+
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body"><h3>When dates would you like to rent the
+          {{Marque}}
+          {{Range}}?</h3><form class="form new-booking-form">
+        <p>Pick Up Date: <input class="form-input" type="text" id="datepicker" name ="pick-up"></p>
+        <p>Drop Off Date: <input class="form-input" type="text" id="datepicker1" name="drop-off"/></p>
+        <p>Drop Off Date:
+          <input
+          class="form-input" 
+            type="text"
+            id="bookedcar"
+            name="bookedcar"
+            value="{{Marque}} {{Range}}"
+          /></p>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+          data-id="{{booking.id}}"
+        >Close</button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
+      </div></form>
+    </div>
+  </div>
+</div>
+
+<script src="/js/profile.js"></script>
