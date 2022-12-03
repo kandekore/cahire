@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SCA Rental</title>
      <link rel="stylesheet" href="css/styles.css" />
-     <style>.header {
+          <style>.header {
   background: green !important;
 }
 a.navbar-brand {
+  color: #fff !important;
+}
+#navbar-toggler {
   color: #fff !important;
 }
 .flex-container {
@@ -21,7 +24,6 @@ a.navbar-brand {
   /* width: 145%;*/
   padding: 40px;
 }
-
 li {
   list-style: none;
 }
@@ -29,7 +31,6 @@ li {
 h3 {
   font-size: 1.5rem;
 }
-
 .carousel-item.active {
   height: 450px;
   margin-top: -20px;
@@ -47,24 +48,165 @@ p.slogan {
 .card {
   margin-top: 20px;
 }
-
 .card-img-top {
   height: 175px;
 }
-button.btn.btn-primary.car {
+#logout,
+#login {
   float: right;
-  background: green;
 }
-
-a.btn.btn-primary.car {
+.button {
+  align-self: flex-end;
   float: right;
-  background: green;
 }
-
-.oner {
+.row {
+  display: flex;
+  flex-direction: row;
   width: 100%;
 }
-
+.button-box {
+  margin: 35px auto;
+}
+.login-card {
+  display: flex;
+  margin: 0 0 20px 0;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 5px;
+  border: 3px solid #fff;
+  border-style: groove;
+  border-width: 10px;
+  background-color: white;
+  color: black;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+}
+.form-input {
+  background: white;
+  box-shadow: 0 0 2em hsl(231deg 62% 94%);
+  padding: 1em;
+  display: flex;
+  width: 270px;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-bottom: 10px;
+  outline: none;
+  border-radius: 20px;
+  color: black;
+  outline: none;
+}
+input {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+input.placeholder {
+  color: hsl(0deg 0% 0%);
+  font-size: 0.9em;
+}
+.butn {
+  font-size: 1rem;
+  margin-top: 1.8rem;
+  padding: 1rem;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  width: 90%;
+  color: #fff;
+  cursor: pointer;
+  background-color: #003300;
+}
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#logout,
+#login {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: right;
+  letter-spacing: 0.25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform, opacity;
+  z-index: 0;
+}
+#login {
+  background-color: lightgreen;
+  color: #3c4043;
+}
+#login:hover {
+  background-color: white;
+  color: white;
+}
+#logout {
+  background-color: #003300;
+  color: #fff;
+}
+#logout:hover {
+  background: #f6f9fe;
+  color: #174ea6;
+}
+#logout:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
+    0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+#logout:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+.button {
+  margin-left: 700px;
+}
+@media screen and (max-width: 998px) {
+  .button {
+    margin-left: 400px;
+  }
+}
+@media screen and (max-width: 798px) {
+  .button {
+    margin-left: 200px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .button {
+    margin-left: 20px;
+  }
+}
+.oner {
+    width: 100%;
+}
+h3 {
+    font-size: 25px;
+}
 input.hidden {
     display: none;
 }
