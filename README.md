@@ -39,7 +39,7 @@ As a USER I want to be able to search cars from a specific location so that I ca
 
 # Links
 
-Deploying link - https://morning-journey-04900.herokuapp.com/
+Deploying link - https://carhire-porj2.herokuapp.com/
 
 Repo link - https://github.com/blanfried/SCA-Rental
 
